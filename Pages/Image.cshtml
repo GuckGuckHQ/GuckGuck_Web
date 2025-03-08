@@ -1,0 +1,16 @@
+@page "/{id}"
+@model DisplayImageModel
+@{
+	ViewData["Title"] = "Display Image";
+}
+
+<h2>Display Image</h2>
+
+@if (Model.ImageUrl != null)
+{
+	<img src="@Model.ImageUrl" alt="Image" />
+}
+else
+{
+	<p>Image not found.</p>
+}
