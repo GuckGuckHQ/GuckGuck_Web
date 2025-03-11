@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,11 +11,9 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/GuckGuck_Web.styles.css" asp-append-version="true" />
 </head>
+
 <body>
-
-
     <section class="hero is-fullheight">
-        <!-- Hero head: will stick at the top -->
         <div class="hero-head">
             <header class="navbar">
                 <div class="container">
@@ -26,7 +25,7 @@
                     <div id="navbarMenuHeroC" class="navbar-menu">
                         <div class="navbar-end">
                             <span class="navbar-item">
-                                <a class="button color-btn btn-green">
+                                <a class="button color-btn btn-green" href="https://github.com/guckguckhq">
                                     <span class="icon">
                                         <i class="ri-github-line"></i>
                                     </span>
@@ -38,30 +37,25 @@
                 </div>
             </header>
         </div>
-
-
         @RenderBody()
-
-
-        <!-- Hero footer: will stick at the bottom -->
         <div class="hero-foot">
-            @* <nav class="tabs is-boxed is-fullwidth">
-                <div class="container">
-                    <ul>
-                        <li class="is-active"><a>Overview</a></li>
-                        <li><a>Modifiers</a></li>
-                        <li><a>Grid</a></li>
-                        <li><a>Elements</a></li>
-                        <li><a>Components</a></li>
-                        <li><a>Layout</a></li>
-                    </ul>
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>
+                        GuckGuck by <strong>Joachim Leonfellner</strong> (<a href="https://github.com/nor0x">nor0x</a>) made in Vienna, Austria 🇪🇺  with support from <a href="https://h3y.studio">H3Y</a>.
+                        &copy; <span id="currentYear"></span>
+                    </p>
                 </div>
-            </nav> *@
+            </footer>
         </div>
     </section>
 
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
