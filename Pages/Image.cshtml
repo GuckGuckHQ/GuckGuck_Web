@@ -7,7 +7,6 @@
 <!-- Hero content: will be in the middle -->
 <div class="hero-body">
     <div class="container has-text-centered">
-        <p class="subtitle">@Model.Id</p>
 
         @if (Model.ImageUrl != null)
         {
@@ -17,6 +16,7 @@
         {
             <p>Image not found.</p>
         }
+        <p class="subtitle">@Model.Id</p>
         <div class="button-container">
             <a id="shareButton" class="button color-btn btn-yellow" onclick="copyLink()">
                 <span class="icon">

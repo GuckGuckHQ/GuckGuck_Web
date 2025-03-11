@@ -1,5 +1,6 @@
 .snapshot-img {
 	max-height: 60vh;
+	border-radius:4px;
 }
 
 .button-container {
