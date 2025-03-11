@@ -52,6 +52,11 @@ body {
 }
 
 
+.img-title-logo {
+	width: 50%;
+	margin-bottom: 2rem;
+}
+
 .img-logo {
 	height: 55px;
 	max-height: 55px !important;
@@ -136,4 +141,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, .navbar-li
 
 .button.color-btn.btn-yellow:hover {
 	box-shadow: 0 2px #ceb73f
+}
+
+@media (max-width: 768px) {
+	.img-title-logo {
+		width: 96%;
+	}
 }

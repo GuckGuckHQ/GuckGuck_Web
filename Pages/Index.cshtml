@@ -4,10 +4,25 @@
     ViewData["Title"] = "Home page";
 }
 
-<!-- Hero content: will be in the middle -->
 <div class="hero-body">
+
     <div class="container has-text-centered">
-        <p class="title">Title</p>
-        <p class="subtitle">Subtitle</p>
+        <p class="title">
+            <img class="img-title-logo" src="~/logo.png" alt="Logo" />
+        </p>
+        <p class="subtitle">Peek at Your Screen from Anywhere!</p>
+        <p class="subtitle">Because sometimes you just need to know what's happening back home.</p>
+        <p class="subtitle">Snap it, Share it, Stay in the loop!</p>
+        <a class="button download-button color-btn btn-pink">
+            <span class="icon">
+                <i class="ri-download-2-line"></i>
+            </span>
+            <span>Download GuckGuck</span>
+        </a>
     </div>
 </div>
+
+<script>
+    //get navbar-item > img-logo and hide it
+    document.querySelector('.navbar-item > .img-logo').style.display = 'none';
+</script>
