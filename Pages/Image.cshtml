@@ -1,16 +1,41 @@
 @page "/{id}"
 @model DisplayImageModel
 @{
-	ViewData["Title"] = "Display Image";
+    ViewData["Title"] = "Display Image";
 }
 
-<h2>Display Image</h2>
+<!-- Hero content: will be in the middle -->
+<div class="hero-body">
+    <div class="container has-text-centered">
+        <p class="subtitle">@Model.Id</p>
 
-@if (Model.ImageUrl != null)
-{
-	<img src="@Model.ImageUrl" alt="Image" />
-}
-else
-{
-	<p>Image not found.</p>
-}
+        @if (Model.ImageUrl != null)
+        {
+            <img class="snapshot-img" src="@Model.ImageUrl" alt="Image" />
+        }
+        else
+        {
+            <p>Image not found.</p>
+        }
+        <div class="button-container">
+            <a id="shareButton" class="button color-btn btn-yellow" onclick="copyLink()">
+                <span class="icon">
+                    <i class="ri-link"></i>
+                </span>
+                <span class="text">Share</span>
+            </a>
+            <a class="button color-btn btn-blue">
+                <span class="icon">
+<i class="ri-file-image-line"></i></span>
+                <span>Copy Image</span>
+            </a>
+            <a class="button color-btn btn-pink">
+                <span class="icon">
+<i class="ri-download-2-line"></i>
+</span>
+                <span>Get App</span>
+            </a>
+        </div>
+
+    </div>
+</div>

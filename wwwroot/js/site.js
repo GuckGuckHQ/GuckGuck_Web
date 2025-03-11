@@ -1,4 +1,30 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿function copyLink() {
+	var copyText = window.location.href;
+	navigator.clipboard.writeText(copyText);
 
-// Write your JavaScript code.
+	var button = document.getElementById("shareButton");
+	var textSpan = button.querySelector(".text");
+
+	function resetAnimation() {
+		textSpan.classList.remove("slide-up", "slide-down");
+		void textSpan.offsetWidth; // Trigger reflow
+	}
+
+	resetAnimation();
+	textSpan.classList.add("slide-up");
+	setTimeout(function () {
+		textSpan.innerHTML = "Copied";
+		resetAnimation();
+		textSpan.classList.add("slide-down");
+	}, 500);
+
+	setTimeout(function () {
+		resetAnimation();
+		textSpan.classList.add("slide-up");
+		setTimeout(function () {
+			textSpan.innerHTML = "Share";
+			resetAnimation();
+			textSpan.classList.add("slide-down");
+		}, 500);
+	}, 2000);
+}

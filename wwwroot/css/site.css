@@ -1,31 +1,139 @@
-html {
-  font-size: 14px;
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
+
+.overpass-mono-300 {
+	font-family: "Overpass Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.overpass-mono-400 {
+	font-family: "Overpass Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+.overpass-mono-500 {
+	font-family: "Overpass Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.overpass-mono-600 {
+	font-family: "Overpass Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.overpass-mono-700 {
+	font-family: "Overpass Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+:root {
+	--bulma-link-h: 147;
 }
 
 body {
-  margin-bottom: 60px;
+	background: #121212;
+	color: #f5f6f7;
+	font-family: "Overpass Mono", monospace;
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+
+.img-logo {
+	height: 55px;
+	max-height: 55px !important;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover {
+	background: transparent;
+}
+
+
+.button {
+	border: none;
+	border-radius: 4px;
+	color: black;
+	cursor: pointer;
+	display: inline-block;
+	display: flex;
+	font-size: 1.3rem;
+	margin: .5rem;
+	padding: .75rem 1rem;
+	position: relative;
+	transition: none;
+	width: fit-content;
+}
+
+.button svg {
+	margin-right: .5rem;
+	width: 1.8rem
+}
+
+.button.color-btn:hover {
+	color: rgba(0, 0, 0, .702);
+	top: 2px
+}
+
+.button.color-btn:active {
+	box-shadow: none !important;
+	color: rgba(0, 0, 0, .502);
+	top: 4px
+}
+
+.button.color-btn.btn-pink {
+	background: #db78fc;
+	box-shadow: 0 4px #b83ddd
+}
+
+.button.color-btn.btn-pink:hover {
+	box-shadow: 0 2px #b83ddd
+}
+
+.button.color-btn.btn-purple {
+	background: #9083ed;
+	box-shadow: 0 4px #6b3cd6
+}
+
+.button.color-btn.btn-purple:hover {
+	box-shadow: 0 2px #6b3cd6
+}
+
+.button.color-btn.btn-blue {
+	background: #5c85f7;
+	box-shadow: 0 4px #3d48dd
+}
+
+.button.color-btn.btn-blue:hover {
+	box-shadow: 0 2px #3d48dd
+}
+
+.button.color-btn.btn-green {
+	background: #41ef90;
+	box-shadow: 0 4px #1e9554
+}
+
+.button.color-btn.btn-green:hover {
+	box-shadow: 0 2px #1e9554
+}
+
+.button.color-btn.btn-yellow {
+	background: #dcff5a;
+	box-shadow: 0 4px #ceb73f
+}
+
+.button.color-btn.btn-yellow:hover {
+	box-shadow: 0 2px #ceb73f
 }
