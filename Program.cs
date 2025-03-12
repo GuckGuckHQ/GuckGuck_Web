@@ -6,6 +6,7 @@ builder.Services.AddOpenApi();
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddAntiforgery(options => options.HeaderName = "X-XSRF-TOKEN");
+builder.Services.AddHostedService<TimedCleanupService>();
 
 
 var app = builder.Build();
