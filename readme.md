@@ -1,5 +1,8 @@
 # 🚀 GuckGuck Web
 
+[![build and deploy](https://github.com/GuckGuckHQ/GuckGuck_Web/actions/workflows/publish.yml/badge.svg)](https://github.com/GuckGuckHQ/GuckGuck_Web/actions/workflows/publish.yml)
+
+
 Welcome to **GuckGuck Web** – the brain behind the GuckGuck ecosystem! This is where your screenshots come to life, accessible anytime, anywhere through a sleek web interface. Whether you're monitoring, logging, or just curious about your screen's history, GuckGuck has you covered.
 
 ## 🌟 What is GuckGuck?
